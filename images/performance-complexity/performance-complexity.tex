@@ -17,20 +17,20 @@
 \draw[->] (0,0) -- (0,5) node [pos=1, xshift=-2ex, fill=white, inner sep=2px] {$P$};
 
 \node[point] at (1,1) (p1) {};
-\node[above of=p1, node distance=3ex] {$G_5$};
-\node[point] at (3,2) (p2) {}; \node[above of=p2, node distance=3ex] {$G_4$};
+\node[above of=p1, node distance=3ex] {$G_4$};
+\node[point] at (3,2) (p2) {}; \node[above of=p2, node distance=3ex] {$G_3$};
 \node[point] at (4,3) (p3) {};
-\node[above of=p3, node distance=3ex] {$G_3$};
+\node[above of=p3, node distance=3ex] {$G_2$};
 \node[point] at (5,3.5) (p4) {};
-\node[above of=p4, node distance=3ex] {$G_2$};
+\node[above of=p4, node distance=3ex] {$G_1$};
 \node[point] at (6,4) (p5) {};
-\node[above of=p5, node distance=3ex] {$G_1$};
+\node[above of=p5, node distance=3ex] {$G_0$};
 \draw[ultra thick] (4.5, 0.1) -- (4.5, -0.1) node [pos=1, yshift=-1.5ex] (CM) {$C_m$};
 \draw[->, ultra thick, shorten >=0.5ex, color=blue] (4.5, 0) -- (4.5, 3.25);
 \draw[->, ultra thick,shorten >=0.5ex, color=blue] (4.5, 3.25) -- (4, 3);
 \draw[->, ultra thick,shorten >=0.5ex, color=blue] (4, 3) -- (0.1, 3);
-\draw[ultra thick] (0.1, 3) -- (-0.1, 3) node [pos=1, xshift=-1.5ex] {$P_3$};
-\node[below of=CM, node distance=4ex, color=blue] {Achieving best performance $P_3$ for complexity $C_m$.};
+\draw[ultra thick] (0.1, 3) -- (-0.1, 3) node [pos=1, xshift=-1.5ex] {$P_2$};
+\node[below of=CM, node distance=4ex, color=blue] {\small Achieving best possible performance $P_2$ for the complexity budget $C_m$.};
 
 \draw[-] (p1) -- (p2) -- (p3) -- (p4) -- (p5);
 \end{tikzpicture}
