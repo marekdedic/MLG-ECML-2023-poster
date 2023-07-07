@@ -27,10 +27,6 @@
 
 \maketitle
 
-\block{Abstract}{
-	Graph based models are used for tasks with increasing size and computational demands. We present a method for node classification that allows a user to precisely select the resolution at which the graph in question should be pretrained. Our method builds on an existing algorithm for pretraining on coarser graphs, HARP, which we extend in order to tune the effect of graph coarsening on the accuracy of node classification on a fine level. We present a novel way of refining the reduced graph in a targeted way based on the node classification confidence of particular nodes. This enhancement provides sufficient detail where needed, while collapsing structures where per-node information is not necessary for sufficient node classification accuracy. Hence, the method provides a meta-model for enhancing graph embedding models such as node2vec. We apply it to several datasets and discuss the differing behaviour on each of them in the context of their properties.
-}
-
 \begin{columns}
 	\column{0.5}
 	\block{The performance-complexity trade-off}{
