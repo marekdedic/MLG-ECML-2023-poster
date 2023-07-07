@@ -3,7 +3,9 @@
 \usepackage{polyglossia}
 
 \usepackage[orientation = portrait, size = a0, scale = 1.4]{beamerposter}
+\usepackage[backend = biber, style = iso-authoryear, sortlocale = en_US, autolang = other, bibencoding = UTF8]{biblatex}
 \usepackage{datetime}
+\usepackage[utf8]{inputenc}
 \usepackage{fontspec}
 \usepackage{microtype}
 
@@ -11,6 +13,9 @@
 \setmainfont{TeX Gyre Termes}
 \usetheme{gemini}
 \usecolortheme{mit}
+
+\addbibresource{zotero.bib}
+\AtBeginBibliography{\small}
 
 \title{Balancing performance and complexity with adaptive graph coarsening}
 
@@ -26,8 +31,9 @@
 
 
 \footercontent{
-  EEML 2023, Košice \hfill
-  \href{mailto:marek@dedic.eu}{marek@dedic.eu}}
+	EEML 2023, Košice \hfill
+	\href{mailto:marek@dedic.eu}{marek@dedic.eu}
+}
 
 % \logoright{\includegraphics[height=7cm]{logo1.pdf}}
 % \logoleft{\includegraphics[height=7cm]{logo2.pdf}}
@@ -92,6 +98,10 @@
 				\includegraphics[width = \linewidth]{images/adaptive-coarsening/adaptive-coarsening.pdf}
 			\end{figure}
 			Downstream classifier accuracies at different steps of adaptive prolongation. Dashed line shows the baseline node2vec model accuracy. The node count is taken relative to the total node count in each dataset. The results are averaged over multiple runs, with the solid line representing the mean and the shaded area denoting one standard deviation.
+		\end{block}
+
+		\begin{block}{References}
+			\printbibliography
 		\end{block}
 	\end{column}
 
