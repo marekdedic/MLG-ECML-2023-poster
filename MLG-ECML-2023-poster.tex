@@ -59,7 +59,7 @@
 		\begin{block}{Motivation}
 			Graph neural networks (GNNs) have proven to achieve superior performance on a number of graph datasets and are adopted across many fields. Superior GNN performance is, however, often paid for by high computational demands, which may be a prohibitive issue in some applications. We investigate the interplay of graph coarsening and the performance of a downstream task.
 			\begin{figure}
-				\includegraphics[width=0.7\linewidth]{images/coarsening-illustration/coarsening-illustration.pdf}
+				\includegraphics[width=0.85\linewidth]{images/coarsening-illustration/coarsening-illustration.pdf}
 			\end{figure}
 		\end{block}
 
@@ -67,7 +67,7 @@
 			The main aim of our work is to explore the performance-complexity characteristics in the context of graph learning, as introduced in \cite{prochazka_downstream_2022}. The result of a repeated application of graph coarsening is a sequence of graphs \( G_0, G_1, G_2, \dots, G_L \), where \( G_0 = G \). Given a model that operates on graphs, a performance metric, and a complexity metric, the sequence \( G_0, G_1, \dots, G_L \) corresponds to points in the performance-complexity plane, where advancing along the sequence generally hurts performance and decreases complexity. This performance-complexity characteristic allows for a choice of a working point that is optimal for the particular use-case.
 
 			\begin{figure}
-				\includegraphics[width=0.75\linewidth]{images/performance-complexity/performance-complexity.pdf}
+				\includegraphics[width=0.8\linewidth]{images/performance-complexity/performance-complexity.pdf}
 			\end{figure}
 		\end{block}
 
