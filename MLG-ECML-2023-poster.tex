@@ -83,7 +83,7 @@
 
 	\begin{column}{\colwidth}
 		\begin{block}{Deep HARP}
-			The one-level HARP schema is generalized to obtain the sequence \( G_0, G_1, G_2, \dots, G_L \) by repeatedly coarsening the graph. Subsequently, the method consists of alternating steps of training the embedding \( \Phi_{G_i} \) on an intermediary graph \( G_i \), followed by a prolongation to \( G_{i - 1} \), going from the coarsest graph \( G_L \) to the original \( G_0 \).
+			The one-level HARP schema is generalized to obtain the sequence \( G_0, G_1, G_2, \dots, G_L \) by repeatedly coarsening the graph. Subsequently, the method consists of alternating steps of training the embedding \( \Phi_{G_{i + 1}} \) on an intermediary graph \( G_{i + 1} \), followed by a prolongation to \( G_{i} \), going from the coarsest graph \( G_L \) to the original \( G_0 \).
 			\begin{figure}
 				\includegraphics[width=0.45\linewidth]{images/deep-harp/deep-harp.pdf}
 			\end{figure}
